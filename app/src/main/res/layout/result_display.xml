@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:background="@color/lightblue"
+    tools:context="com.example.musicmanpop.aphasiatalkhelper.ResultDisplay">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Home_button"
+        android:src="@drawable/home_button"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sosbutton"
+        android:src="@drawable/sos"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="310dp"
+        android:id="@+id/imageDisplay"
+        android:layout_below="@+id/sosbutton"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border_draw"
+        android:layout_above="@+id/textResult" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Display the sentence"
+        android:id="@+id/textResult"
+        android:layout_centerHorizontal="true"
+        android:textSize="60dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginTop="40dp"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/finishButton"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        android:id="@+id/finishButton"
+        android:background="@drawable/rounded_corner"
+        android:scaleType="fitXY"
+        android:text="ย้อนกลับ"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp" />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/speakerButton"
+        android:src="@drawable/speaker_button"
+        android:layout_above="@+id/finishButton"
+        android:layout_toEndOf="@+id/textResult" />
+
+</RelativeLayout>

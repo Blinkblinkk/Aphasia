@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".MainActivity"
+    android:background="@color/white">
+
+
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:verticalSpacing="40dp"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        android:stackFromBottom="false"
+        android:numColumns="2"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="50dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ผู้ชาย"
+            android:id="@+id/text_male_gender"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:layout_marginTop="-175dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ผู้หญิง"
+            android:id="@+id/text_female_gender"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:layout_marginTop="-175dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="กรุณาเลือกเพศของคุณ"
+        android:id="@+id/text_language_select_th"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#3090C7"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please Select Your Gender"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#3090C7"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_below="@+id/text_language_select_th"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

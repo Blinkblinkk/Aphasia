@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".MainActivity"
+    android:background="@color/lightblue">
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sos"
+        android:src="@drawable/sos"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:id="@+id/back"
+        android:src="@drawable/back"
+        android:background="@null"
+        android:scaleType="fitCenter"
+
+        android:layout_gravity="left"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/home"
+        android:layout_toEndOf="@+id/home"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@+id/home" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="match_parent"
+        android:id="@+id/home"
+        android:src="@drawable/home"
+        android:background="@null"
+        android:scaleType="fitCenter"
+
+        android:layout_gravity="left"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignBottom="@+id/sos" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table"
+        android:stretchColumns="*"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_centerInParent="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@null">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:id="@+id/meal_cat"
+                android:src="@drawable/meal_cat"
+                android:layout_column="0"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:padding="20dp" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:id="@+id/dessert_cat"
+                android:src="@drawable/dessert_cat"
+                android:layout_column="1"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:padding="20dp" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:id="@+id/fruit_cat"
+                android:src="@drawable/fruit_cat"
+                android:layout_column="2"
+                android:scaleType="fitCenter"
+                android:background="@null"
+                android:padding="20dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table2"
+        android:stretchColumns="*"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false">
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:text="Meals"
+                android:id="@+id/textView3"
+                android:layout_column="0"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:textColor="#FFFFFF"
+                android:gravity="bottom|center_horizontal"
+                android:padding="20dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:text="Desserts"
+                android:id="@+id/textView4"
+                android:layout_column="1"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:textColor="#FFFFFF"
+                android:gravity="bottom|center_horizontal"
+                android:padding="20dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="300dp"
+                android:text="Fruits"
+                android:id="@+id/textView6"
+                android:layout_column="2"
+                android:textStyle="bold"
+                android:textSize="40dp"
+                android:textColor="#FFFFFF"
+                android:gravity="bottom|center_horizontal"
+                android:padding="20dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

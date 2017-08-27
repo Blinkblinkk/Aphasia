@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/lightblue"
+    tools:context="com.example.iicceey.alphasiahelperver2.AddNewItem">hm.
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/home"
+        android:src="@drawable/home"
+        android:background="@null"
+        android:scaleType="fitCenter"
+
+        android:layout_gravity="left"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@drawable/sos"
+        android:layout_row="0"
+        android:layout_column="5"
+        android:layout_gravity="right"
+        android:background="@null"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_photo"
+        android:src="@drawable/add_photo"
+        android:background="@null"
+        android:visibility="visible"
+        android:layout_below="@+id/home"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <EditText
+        android:layout_width="600dp"
+        android:layout_height="40dp"
+        android:id="@+id/editTextThai"
+        android:layout_below="@+id/add_photo"
+        android:layout_alignLeft="@+id/engname"
+        android:layout_alignStart="@+id/engname"
+        android:textSize="27dp"
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border_draw"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:visibility="visible" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/engname"
+        android:background="@drawable/border_draw"
+        android:textSize="27dp"
+        android:textColor="@color/black"
+        android:paddingLeft="15dp"
+        android:hint="English name"
+        android:layout_toRightOf="@+id/textViewEngname"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/editTextThai"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ชื่ออังกฤษ:"
+        android:id="@+id/textViewEngname"
+        android:textSize="35dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/textViewThaiName"
+        android:textAlignment="center"
+        android:layout_alignParentStart="true"
+        android:gravity="left|center"
+        android:layout_toStartOf="@+id/add_photo"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:layout_width="505dp"
+        android:layout_height="315dp"
+        android:id="@+id/selectedPhoto"
+        android:layout_alignTop="@+id/add_photo"
+        android:layout_alignLeft="@+id/textViewEngname"
+        android:layout_alignStart="@+id/textViewEngname"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="180dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ชื่อไทย: "
+        android:id="@+id/textViewThaiName"
+        android:textSize="35dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/add_photo"
+        android:layout_alignLeft="@+id/textViewEngname"
+        android:gravity="left"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/add_photo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="บันทึก"
+        android:id="@+id/textViewSave"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:background="@drawable/rounded_corner"
+        android:padding="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ยกเลิก"
+        android:id="@+id/textViewCancel"
+        android:background="@drawable/rounded_corner"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:padding="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/home" />
+
+</RelativeLayout>

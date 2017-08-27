@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.peterleow.androidanimation.DrawableAnimationActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="วิธีใช้"
+        android:id="@+id/text_language_select_th"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#3090C7"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:layout_width="458dp"
+        android:layout_height="358dp"
+        android:id="@+id/imageViewSlideShow"
+        android:scaleType="fitXY"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.กรุณาเลือกภาษาที่ต้องการ"
+        android:id="@+id/text_step_1"
+        android:layout_below="@+id/imageViewSlideShow"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3090C7"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp" />
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/next"
+        android:src="@drawable/next"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="How To Use"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#3090C7"
+        android:textStyle="bold"
+        android:textSize="50dp"
+        android:layout_below="@+id/text_language_select_th"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.Please select your language"
+        android:id="@+id/textView3"
+        android:textColor="#3090C7"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_below="@+id/text_step_1"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/exit"
+        android:text="ออก"
+        android:id="@+id/exit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:scaleType="fitCenter"
+        android:background="@null" />
+
+</RelativeLayout>
+

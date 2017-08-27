@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp"
+    android:background="@color/lightblue"
+    >
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView" >
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="false">
+
+        <EditText
+            android:layout_width="520dp"
+            android:layout_height="80dp"
+            android:id="@+id/txtFirstNamePatient"
+            android:background="@drawable/border_draw"
+            android:textColor="@color/black"
+            android:textSize="70dp"
+            android:textColorHint="#bfbfbf"
+            android:textStyle="normal"
+            android:visibility="visible"
+            android:gravity="center_vertical|right"
+            android:paddingRight="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="170dp" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/speaker_button"
+            android:background="@null"
+            android:id="@+id/speech"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="170dp"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/home"
+            android:src="@drawable/home"
+            android:background="@null"
+            android:scaleType="fitCenter"
+
+            android:layout_gravity="left"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignBottom="@+id/sos" />
+    </RelativeLayout>
+
+</RelativeLayout>

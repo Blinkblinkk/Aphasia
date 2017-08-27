@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    android:paddingBottom="0dp" tools:context=".MainActivity"
+    android:background="@color/white">
+
+
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:columnCount="4"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/gridLayout3"
+        android:layout_below="@+id/text_language_select_eng">
+
+        <ImageButton
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/thai_flag"
+            android:src="@drawable/thai_flag"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:layout_margin="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="80dp" />
+
+        <ImageButton
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/eng_flag"
+            android:src="@drawable/eng_flag"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="right"
+            android:background="@null"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="100dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="80dp" />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ภาษาไทย"
+            android:id="@+id/text_thai_lang"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:layout_marginTop="-175dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="English"
+            android:id="@+id/text_eng_lang"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center_horizontal"
+            android:textSize="30dp"
+            android:layout_marginTop="-175dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+
+
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="กรุณาเลือกภาษา"
+        android:id="@+id/text_language_select_th"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#3090C7"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please Select Language"
+        android:id="@+id/text_language_select_eng"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#3090C7"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_below="@+id/text_language_select_th"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@color/redbrown"
+    tools:context="com.example.musicmanpop.aphasiatalkhelper.SosNotification">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOS"
+        android:id="@+id/textSOSshadow"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="150dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SOS"
+        android:id="@+id/textSOS"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="150dp"/>
+
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageSOS"
+        android:src="@drawable/sosnoti"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/stopButton"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/textSOS" />
+
+    <Button
+    android:layout_width="fill_parent"
+    android:layout_height="130dp"
+    android:id="@+id/stopButton"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:text="Stop"
+    android:textStyle="bold"
+    android:textSize="70dp"
+    android:background="@drawable/rounded_border_white"
+    android:textColor="@color/black"
+        android:layout_marginLeft="300dp" />
+</RelativeLayout>
